@@ -30,7 +30,7 @@ caption {
     }
 
     section {
-        padding: 30px;
+        padding: 10px;
         text-align: center;
     }
 
@@ -42,8 +42,13 @@ caption {
     }
 
     /* TODO: O problema de responsividade provavelmente esteja aqui */
-    #container-1 > table, 
+    #container-1 > table {
+        border: 1px solid black;
+        max-width: fit-content;
+        font-size: 0.1em;
+    } 
     #container-2 > table {
+        margin: auto;
         border: 1px solid black;
         max-width: fit-content;
         font-size: 0.3em;

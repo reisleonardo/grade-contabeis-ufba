@@ -1,3 +1,6 @@
+// Interatividade para mudar a cor da célula
+
+
 // Interatividade para mudar o valor do "matéria restante"
 document.addEventListener("DOMContentLoaded", function() {
     const totalSpan = document.getElementById('total');
