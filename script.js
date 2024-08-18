@@ -1,5 +1,35 @@
 // Interatividade para mudar a cor da célula
+document.addEventListener('DOMContentLoaded', () => {
+    const checkboxes = document.querySelectorAll('.discipline-checkbox');
 
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateRows);
+    });
+
+    function updateRows() {
+        const rows = document.querySelectorAll('tr[data-requisitos]');
+
+        rows.forEach(row => {
+            const requisitos = row.getAttribute('data-requisitos').split(',');
+            let allRequisitosAtendidos = true;
+
+            requisitos.forEach(req => {
+                const reqCheckbox = document.getElementById(req.trim());
+                if (!reqCheckbox || !reqCheckbox.checked) {
+                    allRequisitosAtendidos = false;
+                }
+            });
+
+            if (allRequisitosAtendidos) {
+                row.id = 'liberado';
+                row.style.backgroundColor = 'greenyellow'; // Cor para liberado
+            } else {
+                row.id = 'trancado';
+                row.style.backgroundColor = 'rgba(255, 0, 0, 0.46)'; // Cor para trancado
+            }
+        });
+    }
+});
 
 // Interatividade para mudar o valor do "matéria restante"
 document.addEventListener("DOMContentLoaded", function() {
