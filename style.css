@@ -41,11 +41,12 @@ caption {
         max-width: fit-content;
     }
 
+    /* TODO: O problema de responsividade provavelmente esteja aqui */
     #container-1 > table, 
     #container-2 > table {
         border: 1px solid black;
-        width: 100%;
-        font-size: 0.6em;
+        max-width: fit-content;
+        font-size: 0.5em;
     }
 
     caption {
