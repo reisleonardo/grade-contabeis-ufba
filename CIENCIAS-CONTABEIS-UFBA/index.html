@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade ciências contabéis - UFBa </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/hopstarter/button/256/Button-Info-icon.png" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <h1>Grade do curso de ciências contabéis - UFBa</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Menu principal</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <section>
+            <!--Informações da matéria-->
+            <div id="informacoes-contabeis-ufba">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Código</td>
+                            <td>Duração máxima</td>
+                            <td>Duração mínima</td>
+                            <td>Período do currículo</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>304140</td>
+                            <td>6 anos</td>
+                            <td>4 anos</td>
+                            <td>2023.1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <!--Obrigações e requesitos-->
+            <table>
+                <thead>
+                    <tr>
+                        <td>Natureza</td>
+                        <td>Carga horária</td>
+                        <td>Sua creditação</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Atividade complementar (AC)</td>
+                        <td>60</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Atividade extensionista (AX)</td>
+                        <td>300</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Obrigatória (OB)</td>
+                        <td>2400</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Optativa (OP)</td>
+                        <td>240</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        <!--Tabela das matérias obrigatórias-->
+            <div id="container-1">
+                <table>
+                    <caption>Disciplinas obrigatórias</caption>
+                    <thead>
+                        <tr>
+                            <td>Semestre</td>
+                            <td>Código</td>
+                            <td>Disciplina</td>
+                            <td>Requesito(s)</td>
+                            <td>Aprovação</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="liberado">
+                            <td>1</td>
+                            <td>ADM001</td>
+                            <td>INTRODUÇÃO À ADMINISTRAÇÃO</td>
+                            <td></td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="ADM001"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>1</td>
+                            <td>DIR159</td>
+                            <td>INSTITUIÇÃO DE DIREITO PÚBLICO E PRIVADO</td>
+                            <td></td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="DIR159"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>1</td>
+                            <td>ECOB40</td>
+                            <td>INTRODUÇÃO À ECONOMIA I</td>
+                            <td></td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="ECOB40"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>1</td>
+                            <td>FCC033</td>
+                            <td>CONTABILIDADE INTRODUTÓRIA I</td>
+                            <td></td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC033"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>1</td>
+                            <td>FCC041</td>
+                            <td>MET.PESQ.APLIC.CONTABILIDADE</td>
+                            <td></td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC041"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>1</td>
+                            <td>MATG10</td>
+                            <td>CÁLCULO ELEMENTAR</td>
+                            <td></td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="MATG10"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="DIR159">
+                            <td>2</td>
+                            <td>DIR161</td>
+                            <td>LEGISLAÇÃO TRIBUTÁRIA</td>
+                            <td>DIR159</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="DIR161"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="DIR159">
+                            <td>2</td>
+                            <td>DIR167</td>
+                            <td>DIREITO COMERCIAL VII</td>
+                            <td>DIR159</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="DIR167"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC033">
+                            <td>2</td>
+                            <td>FCC034</td>
+                            <td>CONTABILIDADE INTRODUTÓRIA II</td>
+                            <td>FCC033</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC034"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ECOB40">
+                            <td>2</td>
+                            <td>FCC066</td>
+                            <td>ECONOMIA DAS ORGANIZAÇÕES</td>
+                            <td>ECOB40</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC066"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>2</td>
+                            <td>LETF01</td>
+                            <td>LÍNGUA PORTUGUESA</td>
+                            <td></td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="LETF01"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="MATG10">
+                            <td>2</td>
+                            <td>MAT020</td>
+                            <td>ESTATÍSTICA I A</td>
+                            <td>MATG10</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="MAT020"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="DIR159">
+                            <td>3</td>
+                            <td>DIR164</td>
+                            <td>LEGISLAÇÃO SOCIAL E DIREITO DO TRABALHO</td>
+                            <td>DIR159</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="DIR164"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC034">
+                            <td>3</td>
+                            <td>FCC024</td>
+                            <td>CONTABILIDADE DE CUSTOS</td>
+                            <td>FCC034</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC024"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC034">
+                            <td>3</td>
+                            <td>FCC035</td>
+                            <td>CONTABILIDADE INTERMEDIÁRIA</td>
+                            <td>FCC034</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC035"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="MAT020">
+                            <td>3</td>
+                            <td>MAT023</td>
+                            <td>ESTATÍSTICA II A</td>
+                            <td>MAT020</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="MAT023"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="MATG10">
+                            <td>3</td>
+                            <td>MAT191</td>
+                            <td>MATEMÁTICA FINANCEIRA</td>
+                            <td>MATG10</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="MAT191"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ECOB40">
+                            <td>4</td>
+                            <td>ECO173</td>
+                            <td>ECONOMIA BRASILEIRA CONTEMPORÂNEA</td>
+                            <td>ECOB40</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="ECO173"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC035">
+                            <td>4</td>
+                            <td>FCC036</td>
+                            <td>CONTABILIDADE AVANÇADA</td>
+                            <td>FCC035</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC036"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC035">
+                            <td>4</td>
+                            <td>FCC044</td>
+                            <td>ORÇAMENTO E FIN. GOVERNAMENTAL</td>
+                            <td>FCC035</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC044"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC035">
+                            <td>4</td>
+                            <td>FCC052</td>
+                            <td>INFORM. APLICADA À CONTABILIDADE</td>
+                            <td>FCC035</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC052"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ECOB40">
+                            <td>4</td>
+                            <td>FCC060</td>
+                            <td>MACROECONOMIA</td>
+                            <td>ECOB40</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC060"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036">
+                            <td>5</td>
+                            <td>FCC037</td>
+                            <td>TEORIA DA CONTABILIDADE</td>
+                            <td>FCC036</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC037"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC024">
+                            <td>5</td>
+                            <td>FCC039</td>
+                            <td>ANÁLISE DE CUSTOS</td>
+                            <td>FCC024</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC039"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="DIR161,FCC036">
+                            <td>5</td>
+                            <td>FCC040</td>
+                            <td>CONTABILIDADE TRIBUTÁRIA</td>
+                            <td>DIR161, FCC036</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC040"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC044">
+                            <td>5</td>
+                            <td>FCC050</td>
+                            <td>CONTABILIDADE GOVERNAMENTAL</td>
+                            <td>FCC044</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC050"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC060">
+                            <td>5</td>
+                            <td>FCC051</td>
+                            <td>INSTITUIÇÕES FINANCEIRAS E MERCADO DE CAPITAIS</td>
+                            <td>FCC060</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC051"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036">
+                            <td>6</td>
+                            <td>FCC009</td>
+                            <td>AUDITORIA I</td>
+                            <td>FCC036</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC009"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036">
+                            <td>6</td>
+                            <td>FCC023</td>
+                            <td>ANÁLISE DAS DEMONSTRAÇÕES CONTÁBEIS</td>
+                            <td>FCC036</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC023"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>6</td>
+                            <td>FCC038</td>
+                            <td>ÉTICA GERAL E PROFISSIONAL</td>
+                            <td></td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC038"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC039">
+                            <td>6</td>
+                            <td>FCC045</td>
+                            <td>ORÇAMENTO EMPRESARIAL E PLANEJAMENTO ESTRATÉGICO</td>
+                            <td>FCC039</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC045"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC009">
+                            <td>7</td>
+                            <td>FCC010</td>
+                            <td>AUDITORIA II</td>
+                            <td>FCC009</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC010"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC045,FCC052">
+                            <td>7</td>
+                            <td>FCC046</td>
+                            <td>SISTEMA DE INFORMAÇÃO GERENCIAL</td>
+                            <td>FCC045, FCC052</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC046"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036">
+                            <td>7</td>
+                            <td>FCC049</td>
+                            <td>PERÍCIA CONTÁBIL E ARBITRAGEM</td>
+                            <td>FCC036</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC049"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC009,FCC050">
+                            <td>7</td>
+                            <td>FCC053</td>
+                            <td>AUDITORIA GOVERNAMENTAL</td>
+                            <td>FCC009, FCC050</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC053"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC046">
+                            <td>8</td>
+                            <td>FCC047</td>
+                            <td>INTRODUÇÃO À CONTROLADORIA</td>
+                            <td>FCC046</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC047"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC034">
+                            <td>8</td>
+                            <td>FCCF02</td>
+                            <td>ESTÁGIO EM CONTABILIDADE</td>
+                            <td>FCC034</td>
+                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCCF02"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Matérias obrigatórias restantes: <span id="total"><strong>37</strong></span></p>
+        <!--Tabela das matérias optativa-->
+            <div id="container-2">
+                <table>
+                    <caption>Disciplinas optativas</caption>
+                    <thead>
+                        <tr>
+                            <td>Código</td>
+                            <td>Disciplina</td>
+                            <td>Requesito(s)</td>
+                            <td>Aprovação</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="liberado">
+                            <td>FCCB91</td>
+                            <td>ACCS-EXT.U.D.CIENT.TEC.INOV.:REG.PAT.DE INVENÇÃO</td>
+                            <td></td>
+                            <td><input type="checkbox" id="FCCB91" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>FCCB70</td>
+                            <td>ACCS:AÇÃO PEDAG CONTÁBIL-FINANC:TECN SOCIAL..PRESERV. AMBIEN</td>
+                            <td></td>
+                            <td><input type="checkbox" id="FCCB70" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ADM001, FCC036">
+                            <td>ADM172</td>
+                            <td>ADMINISTRACAO FINANCEIRA I</td>
+                            <td>ADM001, FCC036</td>
+                            <td><input type="checkbox" id="ADM172" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ADM172">
+                            <td>ADM177</td>
+                            <td>ADMINISTRACAO FINANCEIRA II</td>
+                            <td>ADM172</td>
+                            <td><input type="checkbox" id="ADM177" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ADM001">
+                            <td>ADM143</td>
+                            <td>CHEFIA E LIDERANÇA I-A</td>
+                            <td>ADM001</td>
+                            <td><input type="checkbox" id="ADM143" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ADM001">
+                            <td>ADM180</td>
+                            <td>COMERCIO EXTERIOR</td>
+                            <td>ADM001</td>
+                            <td><input type="checkbox" id="ADM180" value="45" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ADM001">
+                            <td>ADM007</td>
+                            <td>COMUNICACAO I</td>
+                            <td>ADM001</td>
+                            <td><input type="checkbox" id="ADM007" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036">
+                            <td>FCC032</td>
+                            <td>CONTABILIDADE CONSTRUÇÃO CIVIL</td>
+                            <td>FCC036</td>
+                            <td><input type="checkbox" id="FCC032" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036">
+                            <td>FCC014</td>
+                            <td>CONTABILIDADE DE SEGUROS</td>
+                            <td>FCC036</td>
+                            <td><input type="checkbox" id="FCC014" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036, FCC045">
+                            <td>FCC056</td>
+                            <td>CONTABILIDADE ESTRATEGICA</td>
+                            <td>FCC036, FCC045</td>
+                            <td><input type="checkbox" id="FCC056" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036">
+                            <td>FCC054</td>
+                            <td>CONTABILIDADE HOSPITALAR</td>
+                            <td>FCC036</td>
+                            <td><input type="checkbox" id="FCC054" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036">
+                            <td>FCC055</td>
+                            <td>CONTABILIDADE INTERNACIONAL</td>
+                            <td>FCC036</td>
+                            <td><input type="checkbox" id="FCC055" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036">
+                            <td>FCC062</td>
+                            <td>CONTABILIDADE PARA ORGANIZAÇÕES DO TERCEIRO SETOR</td>
+                            <td>FCC036</td>
+                            <td><input type="checkbox" id="FCC062" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036">
+                            <td>FCC015</td>
+                            <td>CONTABILIDADE RURAL</td>
+                            <td>FCC036</td>
+                            <td><input type="checkbox" id="FCC015" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>ECO165</td>
+                            <td>CONTABILIDADE SOCIAL</td>
+                            <td></td>
+                            <td><input type="checkbox" id="ECO165" value="75" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC040">
+                            <td>FCC057</td>
+                            <td>CONTABILIDADE TRIBUTARIA II</td>
+                            <td>FCC040</td>
+                            <td><input type="checkbox" id="FCC057" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>FCCB59</td>
+                            <td>CONTROLADORIA AMBIENTAL</td>
+                            <td></td>
+                            <td><input type="checkbox" id="FCCB59" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="DIR159">
+                            <td>DIR160</td>
+                            <td>DIREITO ADMINISTRATIVO III</td>
+                            <td>DIR159</td>
+                            <td><input type="checkbox" id="DIR160" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>ECO156</td>
+                            <td>ECONOMIA CLÁSSICA</td>
+                            <td></td>
+                            <td><input type="checkbox" id="ECO156" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ECOB40">
+                            <td>ECO185</td>
+                            <td>ECONOMIA DA TECNOLOGIA</td>
+                            <td>ECOB40</td>
+                            <td><input type="checkbox" id="ECO185" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>ECO187</td>
+                            <td>ECONOMIA DO SETOR TERCIÁRIO</td>
+                            <td></td>
+                            <td><input type="checkbox" id="ECO187" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ECOB40">
+                            <td>ECOB48</td>
+                            <td>EVOLUÇÃO DO CAPITALISMO I</td>
+                            <td>ECOB40</td>
+                            <td><input type="checkbox" id="ECOB48" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ADM001, MAT191">
+                            <td>FCC061</td>
+                            <td>FUNDAMENTOS DA ANALISE DE INVESTIMENTOS</td>
+                            <td>ADM001, MAT191</td>
+                            <td><input type="checkbox" id="FCC061" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ADM001, FCC036">
+                            <td>FCC064</td>
+                            <td>GESTÃO CONTÁBIL - ASPECTO ECONÔMICO E FINANCEIRO</td>
+                            <td>ADM001, FCC036</td>
+                            <td><input type="checkbox" id="FCC064" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>LET053</td>
+                            <td>INGLES INSTRUMENTAL I N-100</td>
+                            <td></td>
+                            <td><input type="checkbox" id="LET053" value="45" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>FCH001</td>
+                            <td>INTRODUÇÃO À FILOSOFIA</td>
+                            <td></td>
+                            <td><input type="checkbox" id="FCH001" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>MAT115</td>
+                            <td>INTRODUCAO AO PROCESSAMENTO DE DADOS</td>
+                            <td></td>
+                            <td><input type="checkbox" id="MAT115" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>FCH007</td>
+                            <td>INTRODUCAO SOCIOLOGIA II</td>
+                            <td></td>
+                            <td><input type="checkbox" id="FCH007" value="75" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC024,FCC035">
+                            <td>FCC059</td>
+                            <td>JOGOS DE NEGOCIOS</td>
+                            <td>FCC024, FCC035</td>
+                            <td><input type="checkbox" id="FCC059" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>LETA36</td>
+                            <td>LEITURA DE TEXTOS EM LINGUA ESPANHOLA	</td>
+                            <td></td>
+                            <td><input type="checkbox" id="LETA36" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>LETE46</td>
+                            <td>LIBRAS-LÍNGUA BRASILEIRA DE SINAIS	 I</td>
+                            <td></td>
+                            <td><input type="checkbox" id="MAT190" value="30" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ADM001">
+                            <td>FCC065</td>
+                            <td>LIDERANÇA SITUACIONAL</td>
+                            <td>ADM001</td>
+                            <td><input type="checkbox" id="FCC065" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ADM001">
+                            <td>FCC048</td>
+                            <td>MERCADOLÓGICA</td>
+                            <td>ADM001</td>
+                            <td><input type="checkbox" id="FCC048" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC037,FCC041">
+                            <td>FCC043</td>
+                            <td>MONOGRAFIA</td>
+                            <td>FCC037, FCC041</td>
+                            <td><input type="checkbox" id="FCC043" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036,FCC041">
+                            <td>FCC042</td>
+                            <td>PROJETO DE PESQ.CONTABILIDADE</td>
+                            <td>FCC036, FCC041</td>
+                            <td><input type="checkbox" id="FCC042" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="liberado">
+                            <td>IPSA01</td>
+                            <td>PSICOLOGIA I</td>
+                            <td></td>
+                            <td><input type="checkbox" id="IPSA01" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ADM001">
+                            <td>FCC063</td>
+                            <td>SISTEMAS ORGANIZACIONAIS</td>
+                            <td>ADM001</td>
+                            <td><input type="checkbox" id="FCC063" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="ECO156">
+                            <td>ECO162</td>
+                            <td>TEORIA NEOCLASSICA</td>
+                            <td>ECO156</td>
+                            <td><input type="checkbox" id="ECO162" value="60" name="#" class="optativa"></td>
+                        </tr>
+                        <tr id="trancado" data-requisitos="FCC036">
+                            <td>FCC058</td>
+                            <td>TOP.CONT.DE CONTAB.- SEMINARIO</td>
+                            <td>FCC036</td>
+                            <td><input type="checkbox" id="FCC058" value="60" name="#" class="optativa"></td>
+                        </tr>
+                    </tbody>                    
+                </table>
+            </div>
+            <p>Horas optativas restantes: <span id="horas-restantes"><strong>240</strong></span></p>
+        </section>
+    </main>
+<!--Rodapé-->
+<footer>
+<!--Redes sociais-->
+<div class="redessociais">
+    <ul>
+        <li>
+            <a href="https://www.youtube.com/@reisleonardo" target="_blank">
+                <img src="../images/youtube-icon-white.png" alt="Canal do YouTube">
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/ReisLeonardo" target="_blank">
+                <img src="../images/github-icon-white.png" alt="Perfil Github">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/reis-leonardo/" target="_blank">
+                <img src="../images/linkedin-icon-white.png" alt="Perfil LinkedIn">
+            </a>
+        </li>
+    </ul>
+</div>
+<!--Créditos-->
+<p>&copy; Leonardo Reis | Todos os direitos reservados</p>
+</footer>
+</body>
+</html>

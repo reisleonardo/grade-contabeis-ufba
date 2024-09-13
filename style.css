@@ -1,186 +1,140 @@
-/* Regra geral */
-@charset "UTF-8";
-
+/* Reset */
 * {
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 /* Cabeçalho */
 header {
     background-color: black;
     color: white;
-    padding: 15px;
     text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /* Corpo */
-body {
+/* Principal - Introdução */
+#principalhome {
+    background-color: rgb(54, 54, 54);
+    border-radius: 30px;
+    padding: 25px;
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+
+#principalhome h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#principalhome h1:hover::before {
+    content: "<   ";
+    color: green;
+}
+
+#principalhome h1:hover::after {
+    content: "   />";
+    color: green;
+}
+
+#principalhome p {
+    font-size: 0.9em;
+    margin-top: 5px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#principalhome a {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    background-color: white;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 1.3em;
+}
+
+#principalhome a:hover {
     background-color: whitesmoke;
 }
 
-caption {
-    padding: 10px;
+/* Universidades */
+#universidadeshome {
+    background-color: lightblue;
 }
 
-/* Telas smartphone (pequeno) */
-@media (max-width: 768px) {
-    header {
-        font-size: 0.7em;
-    }
-
-    section {
-        padding: 10px;
-        text-align: center;
-    }
-
-    #container-1, 
-    #container-2 {
-        padding: 10px;
-        margin: auto;
-        max-width: fit-content;
-    }
-
-    /* TODO: O problema de responsividade provavelmente esteja aqui */
-    #container-1 > table {
-        border: 1px solid black;
-        max-width: fit-content;
-        font-size: 0.1em;
-    } 
-    #container-2 > table {
-        margin: auto;
-        border: 1px solid black;
-        max-width: fit-content;
-        font-size: 0.3em;
-    }
-
-    caption {
-        font-size: 1.5em;
-    }
-
-    #tfoot {
-        background-color: black;
-        color: white;
-        margin-bottom: 30px;
-        text-align: center;
-    }
+#universidade-intro {
+    display: flex;
+    flex-direction: row;
 }
 
-/* Tablets */
-@media (min-width: 768px) {
-    section {
-        padding: 30px;
-        text-align: center;
-    }
-
-    #container-1, 
-    #container-2 {
-        padding: 10px;
-        margin: auto;
-        max-width: fit-content;
-    }
-
-    #container-1 > table, 
-    #container-2 > table {
-        border: 1px solid black;
-        width: 100%;
-        font-size: 0.6em;
-    }
-
-    caption {
-        font-size: 1.5em;
-    }
-
-    #tfoot {
-        background-color: black;
-        color: white;
-        margin-bottom: 30px;
-        text-align: center;
-    }
+#universidade-intro > img {
+    width: 200px;
 }
 
-/* Outras telas (desktop) */
-@media (min-width: 1200px){
-    section {
-        display: flex;
-        padding: 30px;
-        text-align: center;
-    }
-
-    #container-1, 
-    #container-2 {
-        padding: 10px;
-        margin: auto;
-        max-width: fit-content;
-    }
-
-    #container-1 > table, 
-    #container-2 > table {
-        border: 1px solid black;
-        width: 100%;
-        font-size: 1em;
-    }
-
-    caption {
-        font-size: 1.5em;
-    }
-
-    #tfoot {
-        background-color: black;
-        color: white;
-        margin-bottom: 30px;
-        text-align: center;
-    }
+#universidade-intro h1 {
+    text-align: left;
+    font-size: 1.5em;
+    align-content: center;
 }
 
-table {
-    border: 1px solid black;
+.molde-universidade {
+    background-color: white;
+    margin: 20px auto 0px auto;
+    padding: 20px;
+    width: max-content;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-caption {
-    background-color: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    color: white;
+.molde-universidade h2 {
+    text-align: left;
+    font-size: 1em;
 }
 
-thead tr td{
-    background-color: black;
-    color: white;
-    padding: 10px;
+.molde-universidade h3 {
+    font-size: 0.8em;
+    margin-bottom: 8px;
 }
 
-
-#liberado {
-    background-color: greenyellow;
+.molde-universidade li {
+    list-style-type: none;
 }
 
-#trancado {
-    background-color: rgba(255, 0, 0, 0.46);
+.molde-universidade a {
+    text-decoration: none;
 }
 
 /* Rodapé */
 footer {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
+    padding: 12px;
     color: white;
-    padding: 5px;
     text-align: center;
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
+footer ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
 }
 
-footer span {
-    border-radius: 10px;
-    padding: 2px;
-    font-weight: 700;
-    background-color: white;
-    color: black;
+footer li {
+    align-content: center;
+    list-style-type: none;
+    margin: 0 10px;
 }
 
-footer a:hover {
-    color: red;
-    transition: 0.3s ease;
+footer a img {
+    width: 30px;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin: 10px auto;
 }
