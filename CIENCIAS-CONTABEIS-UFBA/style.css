@@ -224,3 +224,9 @@ footer p {
     font-size: 0.8em;
     margin: 10px auto;
 }
+
+/* Específica */
+#roxo {
+    background-color: yellow;
+    color: black;
+}
