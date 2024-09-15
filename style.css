@@ -18,6 +18,7 @@ header {
 }
 
 /* Corpo */
+
 /* Principal - Introdução */
 #principalhome {
     background-color: rgb(54, 54, 54);
@@ -50,64 +51,33 @@ header {
     margin-bottom: 20px;
 }
 
-#principalhome a {
-    text-decoration: none;
-    color: rgb(54, 54, 54);
+.moldeuniversidade {
     background-color: white;
-    padding: 12px;
-    border-radius: 50px;
-    font-size: 1.3em;
+    color: black;
+    border-radius: 20px;
+    margin: 3%;
 }
 
-#principalhome a:hover {
-    background-color: whitesmoke;
-}
-
-/* Universidades */
-#universidadeshome {
-    background-color: lightblue;
-}
-
-#universidade-intro {
-    display: flex;
-    flex-direction: row;
-}
-
-#universidade-intro > img {
-    width: 200px;
-}
-
-#universidade-intro h1 {
-    text-align: left;
-    font-size: 1.5em;
-    align-content: center;
-}
-
-.molde-universidade {
-    background-color: white;
-    margin: 20px auto 0px auto;
-    padding: 20px;
-    width: max-content;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.molde-universidade h2 {
-    text-align: left;
-    font-size: 1em;
-}
-
-.molde-universidade h3 {
+.moldeuniversidade h2 {
     font-size: 0.8em;
-    margin-bottom: 8px;
+    margin: 10px;
+    padding-top: 10px;
 }
 
-.molde-universidade li {
+.moldeuniversidade h3 {
+    font-size: 0.6em;
+    background-color: lightgray;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.moldeuniversidade li {
     list-style-type: none;
 }
 
-.molde-universidade a {
+.moldeuniversidade a {
     text-decoration: none;
+    font-size: 0.6em;
 }
 
 /* Rodapé */
