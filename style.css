@@ -44,6 +44,11 @@ header {
     color: green;
 }
 
+#principalhome figure img {
+    width: 200px;
+    margin: 10px;
+}
+
 #principalhome p {
     font-size: 0.9em;
     margin-top: 5px;
