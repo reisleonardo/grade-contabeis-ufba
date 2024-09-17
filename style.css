@@ -80,6 +80,11 @@ header {
     list-style-type: none;
 }
 
+#ultimoli {
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
 .moldeuniversidade a {
     text-decoration: none;
     font-size: 0.6em;
