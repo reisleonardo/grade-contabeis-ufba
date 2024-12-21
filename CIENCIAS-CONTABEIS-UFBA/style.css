@@ -53,12 +53,14 @@ caption {
     }
 
     #informacoes-contabeis-ufba {
+        font-size: 0.1em;
         padding: 8px;
         margin: auto;
         max-width: fit-content;
     }
 
     #informacoes-contabeis-ufba table {
+        font-size: 0.1em;
         margin-bottom: 30px;
         margin: 10px auto 5px auto;
     }
