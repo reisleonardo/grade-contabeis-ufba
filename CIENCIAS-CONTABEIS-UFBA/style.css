@@ -37,6 +37,10 @@ caption {
     padding: 10px;
 }
 
+#container-3 > table > tbody > :nth-child(even) {
+    background-color: gray;
+}
+
 /* Telas smartphone (pequeno) */
 @media (max-width: 768px) {
     header {
@@ -60,14 +64,15 @@ caption {
     }
 
     #container-1, 
-    #container-2 {
+    #container-2,
+    #container-3 {
         padding: 10px;
         margin: auto;
         max-width: fit-content;
     }
 
     /* TODO: O problema de responsividade provavelmente esteja aqui */
-    #container-1 > table {
+    #container-1 > table, #container-2 > table {
         border: 1px solid black;
         max-width: fit-content;
         font-size: 0.1em;
@@ -110,14 +115,16 @@ caption {
     }
 
     #container-1, 
-    #container-2 {
+    #container-2,
+    #container-3 {
         padding: 10px;
         margin: auto;
         max-width: fit-content;
     }
 
     #container-1 > table, 
-    #container-2 > table {
+    #container-2 > table,
+    #container-3 > table {
         border: 1px solid black;
         width: 100%;
         font-size: 0.6em;
@@ -145,14 +152,16 @@ caption {
     }
 
     #container-1, 
-    #container-2 {
+    #container-2,
+    #container-3 {
         padding: 10px;
         margin: auto;
         max-width: fit-content;
     }
 
     #container-1 > table, 
-    #container-2 > table {
+    #container-2 > table,
+    #container-3 > table {
         border: 1px solid black;
         width: 100%;
         font-size: 1em;
