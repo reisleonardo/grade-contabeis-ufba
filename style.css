@@ -73,172 +73,6 @@ body p {
     text-align: center;
 }
 
-/* APAGUE Telas smartphone (pequeno) 
-@media (max-width: 768px) {
-    header {
-        font-size: 0.7em;
-    }
-
-    section {
-        padding: 10px;
-        text-align: center;
-    }
-
-    #informacoes-contabeis-ufba {
-        font-size: 0.1em;
-        padding: 8px;
-        margin: auto;
-        max-width: fit-content;
-    }
-
-    #informacoes-contabeis-ufba table {
-        font-size: 0.1em;
-        margin-bottom: 30px;
-        margin: 10px auto 5px auto;
-    }
-
-    #container-1, 
-    #container-2,
-    #container-3 {
-        padding: 10px;
-        margin: auto;
-        max-width: fit-content;
-    }APAGUE*/ 
-
-    /* TODO: O problema de responsividade provavelmente esteja aqui */
-    /* APAGUE #container-1 > table, #container-2 > table, #container-3 > table {
-        border: 1px solid black;
-        max-width: fit-content;
-        font-size: 0.1em;
-    } 
-    #container-2 > table {
-        margin: auto;
-        border: 1px solid black;
-        max-width: fit-content;
-        font-size: 0.3em;
-    }
-
-    caption {
-        font-size: 1.5em;
-    }
-
-    #tfoot {
-        background-color: black;
-        color: white;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-}
-* Apague/
-/* Tablets */
-/* APAGUE @media (min-width: 768px) {
-    section {
-        padding: 30px;
-        text-align: center;
-    }
-
-    #informacoes-contabeis-ufba {
-        padding: 10px;
-        margin: auto;
-        max-width: fit-content;
-    }
-
-    #informacoes-contabeis-ufba table {
-        margin-bottom: 30px;
-        margin: 20px auto 5px auto;
-    }
-
-    #container-1, 
-    #container-2,
-    #container-3 {
-        padding: 10px;
-        margin: auto;
-        max-width: fit-content;
-    }
-
-    #container-1 > table, 
-    #container-2 > table,
-    #container-3 > table {
-        border: 1px solid black;
-        width: 100%;
-        font-size: 0.6em;
-    }
-
-    caption {
-        font-size: 1.5em;
-    }
-
-    #tfoot {
-        background-color: black;
-        color: white;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-} * APAGUE/
-
-/* Outras telas (desktop) */
-/* APAGUE @media (min-width: 1200px){
-    section {
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
-        text-align: center;
-    }
-
-    #container-1, 
-    #container-2,
-    #container-3 {
-        padding: 10px;
-        margin: auto;
-        max-width: fit-content;
-    }
-
-    #container-1 > table, 
-    #container-2 > table,
-    #container-3 > table {
-        border: 1px solid black;
-        width: 100%;
-        font-size: 1em;
-    }
-
-    caption {
-        font-size: 1.5em;
-    }
-
-    #tfoot {
-        background-color: black;
-        color: white;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-}
-
-table {
-    border: 1px solid black;
-}
-
-caption {
-    background-color: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    color: white;
-}
-
-thead tr td{
-    background-color: black;
-    color: white;
-    padding: 10px;
-} * APAGUE/ */
-
-
-#liberado {
-    background-color: greenyellow;
-}
-
-#trancado {
-    background-color: rgba(255, 0, 0, 0.46);
-}
-
 /* Rodapé */
 footer {
     margin-top: 10px;
@@ -279,4 +113,12 @@ footer p {
 
 #cinza {
     background-color: gainsboro;
+}
+
+#liberado {
+    background-color: greenyellow;
+}
+
+#trancado {
+    background-color: rgba(255, 0, 0, 0.46);
 }
