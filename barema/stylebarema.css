@@ -44,6 +44,7 @@ section {
     max-width: fit-content;
     border: solid;
     border-color: black;
+    font-size: 0.5em;
 }
 
 caption {
@@ -62,6 +63,7 @@ tbody {
 
 h2 {
     text-align: center;
+    font-size: 1em;
 }
 
 /* Rodapé */
@@ -72,6 +74,7 @@ footer {
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 footer ul {
