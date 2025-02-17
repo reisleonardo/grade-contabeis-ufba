@@ -3,119 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciências contabéis - UFBa </title>
+    <title>Grade interativa | Ciências contábeis</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://seeklogo.com/images/C/Caduceu-logo-677C4EFE20-seeklogo.com.png" type="image/x-icon">
     <script src="script.js"></script>
 </head>
 <body>
 <header>
-    <h1>Ciências contabéis - UFBa</h1>
+    <h1>Grade curricular</h1>
+    <ul>
+        <li><a href="info/info.html">Info</a></li>
+        <li><a href="barema/barema.html">Baremas</a></li>
+        <li><a href="Manual do calouro.pdf" target="_blank">Manual</a></li>
+    </ul>
 </header>
     <main>
         <section>
-            <!--Informações do curso-->
-            <div id="informacoes-contabeis-ufba">
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Código</td>
-                            <td>Turno</td>
-                            <td>Duração máxima</td>
-                            <td>Duração mínima</td>
-                            <td>Período do currículo</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>304140</td>
-                            <td>Diurno</td>
-                            <td>6 anos</td>
-                            <td>4 anos</td>
-                            <td>2023.1</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Direção</td>
-                            <td>Departamento</td>
-                            <td>Colegiado de graduação</td>
-                            <td>Apoio</td>
-                            <td>Núcleo de extensão</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="mailto:fccdiretor@ufba.br">Email</a><hr><a href="tel:32839130">Telefone</a></td>
-                            <td><a href="mailto:depfcc@ufba.br">Email</a><hr><a href="tel:32838768">Telefone</a></td>
-                            <td><a href="mailto:colegiadofcc@ufba.br">Email</a><hr><a href="tel:32839130">Telefone</a></td>
-                            <td><a href="mailto:apoiofcc@gmail.com">Email</a><hr><a href="tel:32838762">Telefone</a></td>
-                            <td><a href="mailto:naex@ufba.br">Email</a><hr><a href="tel:32838769">Telefone</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!--Base legal-->
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Base legal</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="text-align: justify;">
-                            <td>DATA DE INÍCIO: 04.03.1945.<hr>RECONHECIMENTO: DECRETO-LEI Nº 7988 DE 22.09.1945.<hr>DECRETO Nº 1423 DE 27.11.1905.<hr>DIRETRIZES CURRICULARES: PARECER CNE/CES Nº 146 DE 03.,04.2002.</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!--Descrição profissional-->
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Descrição Profissional</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="text-align: justify;">
-                            <td>O bacharel em Ciências Contábeis teve sua profissão regulamentada pelo Decreto-Lei 9.295, de 27.05.46 que, no art. 25, fixam-se as sequintes atribuições profissionais: <hr><li>a) organizações e execução dos serviços de contabilidade em geral;</li> <li>b) escrituração dos livros de contabilidade obrigatórios, bem como de todos os necessários no conjunto da organização contábil e levantamento dos respectivos balanços de demostrações;</li> <li>c) pericias judiciais ou extrajudiciais, revisão de balanços e de contas em geral , verificação de haveres , revisão de permanente ou periódica de escritas, regulações judiciais ou extrajudiciais de avarias grossas ou comuns, assistência aos conselhos fiscais das sociedades anônimas e quaisquer outras atribuições de natureza técnica conferidas por lei aos profissionais de contabilidade.</li>As atribuições das alineas "a" e "b" são comuns ao Bacharel em Ciências Contábeis e ao Técnico em Contabilidade, enquanto que as da alinea "c" são exclusivas ao Bacharel em Ciências Contábeis. A Resolução 560/83, do Conselho Federal de contabilidade permitiu maior detalhamento e atualização das atribuições constantes do referido Decreto-Lei. O avanço das técnicas em Controladoria, Auditoria e, notadamente nos Sistemas de Informações Contábeis tem reservado ao Bacharel em Ciências Contábeis um dos papéis mais relevantes tanto no registro sistemático e cronológico das informações, como no subsidio à formulação de decisões nos mais diferentes niveis gerenciais. Mais recentemente, tem se discutido com muita ênfase as atribuições relacionadas com a consultoria empresarial.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
             <!--Obrigações e requesitos-->
-            <table>
+            <table id="natureza">
                 <thead>
                     <tr>
                         <td>Natureza</td>
                         <td>Carga horária</td>
-                        <td id="roxo">Sua creditação</td>
+                        <td id="amarelo">Sua creditação</td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><abbr title="Entre em contato com o colegiado para computar suas horas">Atividade complementar (AC)</abbr></td>
-                        <td>60</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Obrigatória (OB) + <abbr title="Entre em contato com o colegiado para computar suas horas">Extensionista (AX)</abbr></td>
-                        <td>2700</td>
+                        <td id="cinza">Obrigatória (OB)</td>
+                        <td>2400</td>
                         <td id="creditacao-obrigatoria">0</td>
                     </tr>
                     <tr>
-                        <td>Optativa (OP)</td>
+                        <td id="cinza">Optativa (OP)</td>
                         <td>240</td>
                         <td id="creditacao-optativa">0</td>
                     </tr>
                 </tbody>
             </table>
-            </div>
         <!--Tabela das matérias obrigatórias-->
             <div id="container-1">
                 <table>
-                    <caption>Disciplinas obrigatórias e extensionistas</caption>
+                    <caption>Disciplinas obrigatórias</caption>
                     <thead>
                         <tr>
                             <td>Semestre</td>
@@ -127,274 +56,260 @@
                     </thead>
                     <tbody>
                         <tr id="liberado">
-                            <td>1</td>
-                            <td>ADM001</td>
+                            <td id="cinza">1</td>
+                            <td id="cinza">ADM001</td>
                             <td>INTRODUÇÃO À ADMINISTRAÇÃO</td>
                             <td></td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="ADM001"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>1</td>
-                            <td>DIR159</td>
+                            <td id="cinza">1</td>
+                            <td id="cinza">DIR159</td>
                             <td>INSTITUIÇÃO DE DIREITO PÚBLICO E PRIVADO</td>
                             <td></td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="DIR159"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>1</td>
-                            <td>ECOB40</td>
+                            <td id="cinza">1</td>
+                            <td id="cinza">ECOB40</td>
                             <td>INTRODUÇÃO À ECONOMIA I</td>
                             <td></td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="ECOB40"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>1</td>
-                            <td>FCC033</td>
+                            <td id="cinza">1</td>
+                            <td id="cinza">FCC033</td>
                             <td>CONTABILIDADE INTRODUTÓRIA I</td>
                             <td></td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC033"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>1</td>
-                            <td>FCC041</td>
+                            <td id="cinza">1</td>
+                            <td id="cinza">FCC041</td>
                             <td>MET.PESQ.APLIC.CONTABILIDADE</td>
                             <td></td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC041"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>1</td>
-                            <td>MATG10</td>
+                            <td id="cinza">1</td>
+                            <td id="cinza">MATG10</td>
                             <td>CÁLCULO ELEMENTAR</td>
                             <td></td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="MATG10"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="DIR159">
-                            <td>2</td>
-                            <td>DIR161</td>
+                            <td id="cinza">2</td>
+                            <td id="cinza">DIR161</td>
                             <td>LEGISLAÇÃO TRIBUTÁRIA</td>
                             <td>DIR159</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="DIR161"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="DIR159">
-                            <td>2</td>
-                            <td>DIR167</td>
+                            <td id="cinza">2</td>
+                            <td id="cinza">DIR167</td>
                             <td>DIREITO COMERCIAL VII</td>
                             <td>DIR159</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="DIR167"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC033">
-                            <td>2</td>
-                            <td>FCC034</td>
+                            <td id="cinza">2</td>
+                            <td id="cinza">FCC034</td>
                             <td>CONTABILIDADE INTRODUTÓRIA II</td>
                             <td>FCC033</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC034"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ECOB40">
-                            <td>2</td>
-                            <td>FCC066</td>
+                            <td id="cinza">2</td>
+                            <td id="cinza">FCC066</td>
                             <td>ECONOMIA DAS ORGANIZAÇÕES</td>
                             <td>ECOB40</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC066"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>2</td>
-                            <td>LETF01</td>
+                            <td id="cinza">2</td>
+                            <td id="cinza">LETF01</td>
                             <td>LÍNGUA PORTUGUESA</td>
                             <td></td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="LETF01"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="MATG10">
-                            <td>2</td>
-                            <td>MAT020</td>
+                            <td id="cinza">2</td>
+                            <td id="cinza">MAT020</td>
                             <td>ESTATÍSTICA I A</td>
                             <td>MATG10</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="MAT020"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="DIR159">
-                            <td>3</td>
-                            <td>DIR164</td>
+                            <td id="cinza">3</td>
+                            <td id="cinza">DIR164</td>
                             <td>LEGISLAÇÃO SOCIAL E DIREITO DO TRABALHO</td>
                             <td>DIR159</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="DIR164"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC034">
-                            <td>3</td>
-                            <td>FCC024</td>
+                            <td id="cinza">3</td>
+                            <td id="cinza">FCC024</td>
                             <td>CONTABILIDADE DE CUSTOS</td>
                             <td>FCC034</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC024"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC034">
-                            <td>3</td>
-                            <td>FCC035</td>
+                            <td id="cinza">3</td>
+                            <td id="cinza">FCC035</td>
                             <td>CONTABILIDADE INTERMEDIÁRIA</td>
                             <td>FCC034</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC035"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="MAT020">
-                            <td>3</td>
-                            <td>MAT023</td>
+                            <td id="cinza">3</td>
+                            <td id="cinza">MAT023</td>
                             <td>ESTATÍSTICA II A</td>
                             <td>MAT020</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="MAT023"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="MATG10">
-                            <td>3</td>
-                            <td>MAT191</td>
+                            <td id="cinza">3</td>
+                            <td id="cinza">MAT191</td>
                             <td>MATEMÁTICA FINANCEIRA</td>
                             <td>MATG10</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="MAT191"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ECOB40">
-                            <td>4</td>
-                            <td>ECO173</td>
+                            <td id="cinza">4</td>
+                            <td id="cinza">ECO173</td>
                             <td>ECONOMIA BRASILEIRA CONTEMPORÂNEA</td>
                             <td>ECOB40</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="ECO173"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC035">
-                            <td>4</td>
-                            <td>FCC036</td>
+                            <td id="cinza">4</td>
+                            <td id="cinza">FCC036</td>
                             <td>CONTABILIDADE AVANÇADA</td>
                             <td>FCC035</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC036"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC035">
-                            <td>4</td>
-                            <td>FCC044</td>
+                            <td id="cinza">4</td>
+                            <td id="cinza">FCC044</td>
                             <td>ORÇAMENTO E FIN. GOVERNAMENTAL</td>
                             <td>FCC035</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC044"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC035">
-                            <td>4</td>
-                            <td>FCC052</td>
+                            <td id="cinza">4</td>
+                            <td id="cinza">FCC052</td>
                             <td>INFORM. APLICADA À CONTABILIDADE</td>
                             <td>FCC035</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC052"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ECOB40">
-                            <td>4</td>
-                            <td>FCC060</td>
+                            <td id="cinza">4</td>
+                            <td id="cinza">FCC060</td>
                             <td>MACROECONOMIA</td>
                             <td>ECOB40</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC060"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036">
-                            <td>5</td>
-                            <td>FCC037</td>
+                            <td id="cinza">5</td>
+                            <td id="cinza">FCC037</td>
                             <td>TEORIA DA CONTABILIDADE</td>
                             <td>FCC036</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC037"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC024">
-                            <td>5</td>
-                            <td>FCC039</td>
+                            <td id="cinza">5</td>
+                            <td id="cinza">FCC039</td>
                             <td>ANÁLISE DE CUSTOS</td>
                             <td>FCC024</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC039"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="DIR161,FCC036">
-                            <td>5</td>
-                            <td>FCC040</td>
+                            <td id="cinza">5</td>
+                            <td id="cinza">FCC040</td>
                             <td>CONTABILIDADE TRIBUTÁRIA</td>
                             <td>DIR161, FCC036</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC040"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC044">
-                            <td>5</td>
-                            <td>FCC050</td>
+                            <td id="cinza">5</td>
+                            <td id="cinza">FCC050</td>
                             <td>CONTABILIDADE GOVERNAMENTAL</td>
                             <td>FCC044</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC050"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC060">
-                            <td>5</td>
-                            <td>FCC051</td>
+                            <td id="cinza">5</td>
+                            <td id="cinza">FCC051</td>
                             <td>INSTITUIÇÕES FINANCEIRAS E MERCADO DE CAPITAIS</td>
                             <td>FCC060</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC051"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036">
-                            <td>6</td>
-                            <td>FCC009</td>
+                            <td id="cinza">6</td>
+                            <td id="cinza">FCC009</td>
                             <td>AUDITORIA I</td>
                             <td>FCC036</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC009"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036">
-                            <td>6</td>
-                            <td>FCC023</td>
+                            <td id="cinza">6</td>
+                            <td id="cinza">FCC023</td>
                             <td>ANÁLISE DAS DEMONSTRAÇÕES CONTÁBEIS</td>
                             <td>FCC036</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC023"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>6</td>
-                            <td>FCC038</td>
+                            <td id="cinza">6</td>
+                            <td id="cinza">FCC038</td>
                             <td>ÉTICA GERAL E PROFISSIONAL</td>
                             <td></td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC038"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC039">
-                            <td>6</td>
-                            <td>FCC045</td>
+                            <td id="cinza">6</td>
+                            <td id="cinza">FCC045</td>
                             <td>ORÇAMENTO EMPRESARIAL E PLANEJAMENTO ESTRATÉGICO</td>
                             <td>FCC039</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC045"></td>
                         </tr>
-                        <tr id="liberado">
-                            <td>6</td>
-                            <td>FCCF70</td>
-                            <td>ATIVIDADE EXTENSIONISTA DE LIVRE ESCOLHA</td>
-                            <td></td>
-                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCCF70"></td>
-                        </tr>
                         <tr id="trancado" data-requisitos="FCC009">
-                            <td>7</td>
-                            <td>FCC010</td>
+                            <td id="cinza">7</td>
+                            <td id="cinza">FCC010</td>
                             <td>AUDITORIA II</td>
                             <td>FCC009</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC010"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC045,FCC052">
-                            <td>7</td>
-                            <td>FCC046</td>
+                            <td id="cinza">7</td>
+                            <td id="cinza">FCC046</td>
                             <td>SISTEMA DE INFORMAÇÃO GERENCIAL</td>
                             <td>FCC045, FCC052</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC046"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036">
-                            <td>7</td>
-                            <td>FCC049</td>
+                            <td id="cinza">7</td>
+                            <td id="cinza">FCC049</td>
                             <td>PERÍCIA CONTÁBIL E ARBITRAGEM</td>
                             <td>FCC036</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC049"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC009,FCC050">
-                            <td>7</td>
-                            <td>FCC053</td>
+                            <td id="cinza">7</td>
+                            <td id="cinza">FCC053</td>
                             <td>AUDITORIA GOVERNAMENTAL</td>
                             <td>FCC009, FCC050</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC053"></td>
                         </tr>
-                        <tr id="liberado">
-                            <td>7</td>
-                            <td>FCCF71</td>
-                            <td>ATIVIDADE EXTENSIONISTA DE LIVRE ESCOLHA</td>
-                            <td></td>
-                            <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCCF71"></td>
-                        </tr>
                         <tr id="trancado" data-requisitos="FCC046">
-                            <td>8</td>
-                            <td>FCC047</td>
+                            <td id="cinza">8</td>
+                            <td id="cinza">FCC047</td>
                             <td>INTRODUÇÃO À CONTROLADORIA</td>
                             <td>FCC046</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCC047"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC034">
-                            <td>8</td>
-                            <td>FCCF02</td>
+                            <td id="cinza">8</td>
+                            <td id="cinza">FCCF02</td>
                             <td>ESTÁGIO EM CONTABILIDADE</td>
                             <td>FCC034</td>
                             <td><input type="checkbox" class="discipline-checkbox" value="1" id="FCCF02"></td>
@@ -402,7 +317,7 @@
                     </tbody>
                 </table>
             </div>
-            <p>Matérias obrigatórias restantes: <strong><span id="total">39</span></strong></p>
+            <p>Resta(m): <strong><span id="total"></span></strong> matéria(s).</p>
         <!--Tabela das matérias optativa-->
             <div id="container-2">
                 <table>
@@ -417,235 +332,235 @@
                     </thead>
                     <tbody>
                         <tr id="liberado">
-                            <td>FCCB91</td>
+                            <td id="cinza">FCCB91</td>
                             <td>ACCS-EXT.U.D.CIENT.TEC.INOV.:REG.PAT.DE INVENÇÃO</td>
                             <td></td>
                             <td><input type="checkbox" id="FCCB91" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>FCCB70</td>
+                            <td id="cinza">FCCB70</td>
                             <td>ACCS:AÇÃO PEDAG CONTÁBIL-FINANC:TECN SOCIAL..PRESERV. AMBIEN</td>
                             <td></td>
                             <td><input type="checkbox" id="FCCB70" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ADM001, FCC036">
-                            <td>ADM172</td>
+                            <td id="cinza">ADM172</td>
                             <td>ADMINISTRACAO FINANCEIRA I</td>
                             <td>ADM001, FCC036</td>
                             <td><input type="checkbox" id="ADM172" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ADM172">
-                            <td>ADM177</td>
+                            <td id="cinza">ADM177</td>
                             <td>ADMINISTRACAO FINANCEIRA II</td>
                             <td>ADM172</td>
                             <td><input type="checkbox" id="ADM177" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ADM001">
-                            <td>ADM143</td>
+                            <td id="cinza">ADM143</td>
                             <td>CHEFIA E LIDERANÇA I-A</td>
                             <td>ADM001</td>
                             <td><input type="checkbox" id="ADM143" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ADM001">
-                            <td>ADM180</td>
+                            <td id="cinza">ADM180</td>
                             <td>COMERCIO EXTERIOR</td>
                             <td>ADM001</td>
                             <td><input type="checkbox" id="ADM180" value="45" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ADM001">
-                            <td>ADM007</td>
+                            <td id="cinza">ADM007</td>
                             <td>COMUNICACAO I</td>
                             <td>ADM001</td>
                             <td><input type="checkbox" id="ADM007" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036">
-                            <td>FCC032</td>
+                            <td id="cinza">FCC032</td>
                             <td>CONTABILIDADE CONSTRUÇÃO CIVIL</td>
                             <td>FCC036</td>
                             <td><input type="checkbox" id="FCC032" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036">
-                            <td>FCC014</td>
+                            <td id="cinza">FCC014</td>
                             <td>CONTABILIDADE DE SEGUROS</td>
                             <td>FCC036</td>
                             <td><input type="checkbox" id="FCC014" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036, FCC045">
-                            <td>FCC056</td>
+                            <td id="cinza">FCC056</td>
                             <td>CONTABILIDADE ESTRATEGICA</td>
                             <td>FCC036, FCC045</td>
                             <td><input type="checkbox" id="FCC056" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036">
-                            <td>FCC054</td>
+                            <td id="cinza">FCC054</td>
                             <td>CONTABILIDADE HOSPITALAR</td>
                             <td>FCC036</td>
                             <td><input type="checkbox" id="FCC054" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036">
-                            <td>FCC055</td>
+                            <td id="cinza">FCC055</td>
                             <td>CONTABILIDADE INTERNACIONAL</td>
                             <td>FCC036</td>
                             <td><input type="checkbox" id="FCC055" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036">
-                            <td>FCC062</td>
+                            <td id="cinza">FCC062</td>
                             <td>CONTABILIDADE PARA ORGANIZAÇÕES DO TERCEIRO SETOR</td>
                             <td>FCC036</td>
                             <td><input type="checkbox" id="FCC062" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036">
-                            <td>FCC015</td>
+                            <td id="cinza">FCC015</td>
                             <td>CONTABILIDADE RURAL</td>
                             <td>FCC036</td>
                             <td><input type="checkbox" id="FCC015" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>ECO165</td>
+                            <td id="cinza">ECO165</td>
                             <td>CONTABILIDADE SOCIAL</td>
                             <td></td>
                             <td><input type="checkbox" id="ECO165" value="75" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC040">
-                            <td>FCC057</td>
+                            <td id="cinza">FCC057</td>
                             <td>CONTABILIDADE TRIBUTARIA II</td>
                             <td>FCC040</td>
                             <td><input type="checkbox" id="FCC057" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>FCCB59</td>
+                            <td id="cinza">FCCB59</td>
                             <td>CONTROLADORIA AMBIENTAL</td>
                             <td></td>
                             <td><input type="checkbox" id="FCCB59" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="DIR159">
-                            <td>DIR160</td>
+                            <td id="cinza">DIR160</td>
                             <td>DIREITO ADMINISTRATIVO III</td>
                             <td>DIR159</td>
                             <td><input type="checkbox" id="DIR160" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>ECO156</td>
+                            <td id="cinza">ECO156</td>
                             <td>ECONOMIA CLÁSSICA</td>
                             <td></td>
                             <td><input type="checkbox" id="ECO156" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ECOB40">
-                            <td>ECO185</td>
+                            <td id="cinza">ECO185</td>
                             <td>ECONOMIA DA TECNOLOGIA</td>
                             <td>ECOB40</td>
                             <td><input type="checkbox" id="ECO185" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>ECO187</td>
+                            <td id="cinza">ECO187</td>
                             <td>ECONOMIA DO SETOR TERCIÁRIO</td>
                             <td></td>
                             <td><input type="checkbox" id="ECO187" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ECOB40">
-                            <td>ECOB48</td>
+                            <td id="cinza">ECOB48</td>
                             <td>EVOLUÇÃO DO CAPITALISMO I</td>
                             <td>ECOB40</td>
                             <td><input type="checkbox" id="ECOB48" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ADM001, MAT191">
-                            <td>FCC061</td>
+                            <td id="cinza">FCC061</td>
                             <td>FUNDAMENTOS DA ANALISE DE INVESTIMENTOS</td>
                             <td>ADM001, MAT191</td>
                             <td><input type="checkbox" id="FCC061" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ADM001, FCC036">
-                            <td>FCC064</td>
+                            <td id="cinza">FCC064</td>
                             <td>GESTÃO CONTÁBIL - ASPECTO ECONÔMICO E FINANCEIRO</td>
                             <td>ADM001, FCC036</td>
                             <td><input type="checkbox" id="FCC064" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>LET053</td>
+                            <td id="cinza">LET053</td>
                             <td>INGLES INSTRUMENTAL I N-100</td>
                             <td></td>
                             <td><input type="checkbox" id="LET053" value="45" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>FCH001</td>
+                            <td id="cinza">FCH001</td>
                             <td>INTRODUÇÃO À FILOSOFIA</td>
                             <td></td>
                             <td><input type="checkbox" id="FCH001" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>MAT115</td>
+                            <td id="cinza">MAT115</td>
                             <td>INTRODUCAO AO PROCESSAMENTO DE DADOS</td>
                             <td></td>
                             <td><input type="checkbox" id="MAT115" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>FCH007</td>
+                            <td id="cinza">FCH007</td>
                             <td>INTRODUCAO SOCIOLOGIA II</td>
                             <td></td>
                             <td><input type="checkbox" id="FCH007" value="75" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC024,FCC035">
-                            <td>FCC059</td>
+                            <td id="cinza">FCC059</td>
                             <td>JOGOS DE NEGOCIOS</td>
                             <td>FCC024, FCC035</td>
                             <td><input type="checkbox" id="FCC059" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>LETA36</td>
+                            <td id="cinza">LETA36</td>
                             <td>LEITURA DE TEXTOS EM LINGUA ESPANHOLA	</td>
                             <td></td>
                             <td><input type="checkbox" id="LETA36" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>LETE46</td>
+                            <td id="cinza">LETE46</td>
                             <td>LIBRAS-LÍNGUA BRASILEIRA DE SINAIS	 I</td>
                             <td></td>
                             <td><input type="checkbox" id="MAT190" value="30" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ADM001">
-                            <td>FCC065</td>
+                            <td id="cinza">FCC065</td>
                             <td>LIDERANÇA SITUACIONAL</td>
                             <td>ADM001</td>
                             <td><input type="checkbox" id="FCC065" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ADM001">
-                            <td>FCC048</td>
+                            <td id="cinza">FCC048</td>
                             <td>MERCADOLÓGICA</td>
                             <td>ADM001</td>
                             <td><input type="checkbox" id="FCC048" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC037,FCC041">
-                            <td>FCC043</td>
+                            <td id="cinza">FCC043</td>
                             <td>MONOGRAFIA</td>
                             <td>FCC037, FCC041</td>
                             <td><input type="checkbox" id="FCC043" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036,FCC041">
-                            <td>FCC042</td>
+                            <td id="cinza">FCC042</td>
                             <td>PROJETO DE PESQ.CONTABILIDADE</td>
                             <td>FCC036, FCC041</td>
                             <td><input type="checkbox" id="FCC042" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="liberado">
-                            <td>IPSA01</td>
+                            <td id="cinza">IPSA01</td>
                             <td>PSICOLOGIA I</td>
                             <td></td>
                             <td><input type="checkbox" id="IPSA01" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ADM001">
-                            <td>FCC063</td>
+                            <td id="cinza">FCC063</td>
                             <td>SISTEMAS ORGANIZACIONAIS</td>
                             <td>ADM001</td>
                             <td><input type="checkbox" id="FCC063" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="ECO156">
-                            <td>ECO162</td>
+                            <td id="cinza">ECO162</td>
                             <td>TEORIA NEOCLASSICA</td>
                             <td>ECO156</td>
                             <td><input type="checkbox" id="ECO162" value="60" name="#" class="optativa"></td>
                         </tr>
                         <tr id="trancado" data-requisitos="FCC036">
-                            <td>FCC058</td>
+                            <td id="cinza">FCC058</td>
                             <td>TOP.CONT.DE CONTAB.- SEMINARIO</td>
                             <td>FCC036</td>
                             <td><input type="checkbox" id="FCC058" value="60" name="#" class="optativa"></td>
@@ -653,192 +568,24 @@
                     </tbody>                    
                 </table>
             </div>
-            <p>Horas optativas restantes: <strong><span id="horas-restantes">240</span></strong></p>
-
-            <div id="container-3">
-                <table>
-                    <caption>Quadro de atividades complementares</caption>
-                    
-                    <thead>
-                        <tr>
-                            <td>Atividade complementar</td>
-                            <td>Carga horária máxima (em h)</td>
-                            <td>Equivalência de carga horária</td>
-                            <td>Requesitos para aproveitamento</td>
-                        </tr>
-                    </thead>
-                    
-                    <tbody>
-                        <tr>
-                            <td>Participação em projeto de pesquisa</td>
-                            <td>100</td>
-                            <td>Cada pesquisa corresponderá a 60 horas de atividades complementares.</td>
-                            <td style="text-align: justify;">Participação e conclusão de projetos no Programa Institucional de Bolsas de Iniciação Científica (PIBIC ou PIBIC-AF) ou projetos de iniciação à pesquisa do Programa PERMANECER, remunerados ou não, desenvolvidos por professores. Para comprovação das horas deverá ser apresentado o relatório das atividades desempenhadas pelo aluno e certificado de conclusão da pesquisa comarespectiva carga horária cumprida.</td>
-                        </tr>
-                        <tr>
-                            <td>Realização de atividades de extensão</td>
-                            <td>60</td>
-                            <td>Cada hora de realização de atividade de extensão corresponderá a 1 (uma) hora de atividade complementar.</td>
-                            <td style="text-align: justify;">Participação do aluno na execução de projetos de extensão vinculados à Faculdade de Ciências Contábeis e à Pro- Reitoria de Extensão da UFBA. Para comprovação o aluno deverá apresentar declaração assinada pelo coordenador do projeto e o certificado emitido pelainstituição onde o trabalho foi realizado com a respectiva carga horária.</td>
-                        </tr>
-                        <tr>
-                            <td>Participação em atividades de extensão</td>
-                            <td>60</td>
-                            <td>Cada hora de participação em atividades de extensão corresponderá a 1 (uma) hora de atividade complementar.</td>
-                            <td style="text-align: justify;">Participação do aluno em cursos de formação complementar e treinamentos, comprovadamente relacionados e relevantes à formação contábil.Para comprovação o aluno deverá apresentar o certificado de conclusão do mesmo, emitido pela entidade promotora, discriminando o nome, data, local derealização e carga horária do curso.</td>
-                        </tr>
-                        <tr>
-                            <td>Atividade de Monitoria</td>
-                            <td>60</td>
-                            <td>Cada hora de realização de atividade de monitoria corresponderá a 1 (uma) hora de atividade complementar.</td>
-                            <td style="text-align: justify;">Trabalho de monitoria, remunerado ou voluntário, em disciplinas da área da Ciência Contábil, realizado no curso de Ciências Contábeis da Faculdade de Ciências Contábeis da UFBA. Para comprovação o aluno deverá apresentarrelatório, discriminando as atividadespor ele realizadas, aprovado pelo professor responsável pela disciplina na qual foi realizada a atividade, e certificado emitido pela Pró-reitoria de Graduação da UFBA indicando o nome do estudante e do professor responsável pela monitoria, período de realização, disciplina vinculada e carga horária total da atividade.</td>
-                        </tr>
-                        <tr>
-                            <td>Aprovação em disciplina extracurricular</td>
-                            <td>60</td>
-                            <td>Cada disciplina corresponderá a 30 (trinta) horas de atividade complementar.</td>
-                            <td style="text-align: justify;">Comprovação em histórico escolar da aprovação em disciplina de outro curso de graduação da UFBA ou em outra Instituição de Ensino Superior reconhecida pelo MEC. A disciplina deverá ser complementar à formação do contador e não pode estar contemplada no currículo ao qual o(a) estudante esteja vinculado(a).</td>
-                        </tr>
-                        <tr>
-                            <td>Publicação de artigos científicos</td>
-                            <td>60</td>
-                            <td>Cada trabalho publicado corresponderá a 60 (sessenta) horas de atividade complementar.</td>
-                            <td style="text-align: justify;">O trabalho deverá ter seu conteúdo relacionado ao campo da Ciência Contábil e para ter validade deverá ser publicado em periódico avaliado pelo sistema Qualis da Capes com conceito A, B ou C; ou em anais de Congresso vinculado a Programa de Pós-Graduação em Ciências Contábeis. Para comprovação o aluno deverá apresentar uma cópia da publicação onde conste seu nome,título do periódico e data da publicação.</td>
-                        </tr>
-                        <tr>
-                            <td>Participação em palestras ou eventos científicos</td>
-                            <td>60</td>
-                            <td>Cada hora de participação em evento corresponderá a 1 (uma) hora de atividade complementar.</td>
-                            <td style="text-align: justify;">Participação em palestras ou eventos científicos efetivamente relacionados à formação profissional do contador. Para comprovação o aluno deverá apresentar certificado emitido pela entidade promotora, onde deverão constar: nome do evento e da entidade promotora; data de realização; carga horária; nome do aluno.</td>
-                        </tr>
-                        <tr>
-                            <td>Organização de palestras ou eventos científicos relacionados à formação do contador</td>
-                            <td>30</td>
-                            <td>Cada hora de atuação na organização da palestra ou evento científico corresponderá a 1 (uma) hora de atividade.</td>
-                            <td style="text-align: justify;">Atuação na comissão organizadora de palestras ou eventos científicos efetivamente relacionados à formação profissional do contador. Para comprovação o aluno deverá apresentar declarações ou certificados atestados pela instituição proponente constando período e carga horária total, assinados de forma legível. Apresentar também relatório detalhado e comprovações da ocorrência do evento no período indicado.</td>
-                        </tr>
-                        <tr>
-                            <td>Participação em empresa júnior</td>
-                            <td>60</td>
-                            <td>Cada hora de participação em em atividades vinculadas à empresa júnior corresponderáa 1 (uma) hora de atividade complementar.</td>
-                            <td style="text-align: justify;">Participação do aluno na diretoria, no conselho ou nos projetos realizados pela Empresa Júnior da Faculdade de Ciências Contábeis da UFBA. Para comprovação o aluno deverá apresentar um relatório com a descrição das atividades realizadas e a carga horária dedicada às mesmas. O relatório deve ser aprovado peloprofessortutor da Empresa Júnior ou pelo professor responsável pelo projeto.</td>
-                        </tr>
-                        <tr>
-                            <td>Participação em laboratórios ou grupos de ensino e pesquisa</td>
-                            <td>60</td>
-                            <td>Cada 10 (dez) horas de atividades em laboratórios corresponderá a 5 (cinco) horas de atividade complementar.</td>
-                            <td style="text-align: justify;">Participação do aluno em atividades de laboratórios de ensino e/ou pesquisa formalmente constituídos na Faculdade de Ciências Contábeis da UFBA. Para comprovação o aluno deverá apresentar um relatório com a descrição das atividades realizadas e a carga horária dedicada às mesmas. O relatório deve ser aprovado pelo professor tutor ou responsável pelo laboratório.</td>
-                        </tr>
-                        <tr>
-                            <td>Participação em diretório central de estudantes e diretório acadêmico</td>
-                            <td>60</td>
-                            <td>Cada 10(dez) horas de atividades em diretório acadêmico corresponderá a 1 (uma) hora de atividade complementar.</td>
-                            <td style="text-align: justify;">Participação do aluno em atividades de representação estudantil na Faculdade de Ciências Contábeis e/ou na Universidade Federal da Bahia. Para comprovação o aluno deverá apresentar um relatório com a descrição das atividades realizadas e a carga horária dedicada às mesmas. O relatório deve ser aprovado em reunião plenária do diretório acadêmico (uma cópia da ata da reunião deverá ser apresentada).</td>
-                        </tr>
-                        <tr>
-                            <td>Prestação de serviço voluntário</td>
-                            <td>60</td>
-                            <td>Cada 10 (dez) horas de serviços voluntários corresponderá a 1 (uma) hora de atividade complementar.</td>
-                            <td style="text-align: justify;">Participação do aluno, como voluntário, em atividades de filantropia ou de apoio a programa social, desde que relacionadas aos conteúdos de formação do Contador. Para comprovação o aluno deverá apresentar relatório das atividades desempenhadas, constando período e carga horária de dedicação. Tal relatório deverá ser aprovado e assinado pelo responsável pela instituição onde o trabalho foi desenvolvido.</td>
-                        </tr>
-                        <tr>
-                            <td>Visitas técnicas sob responsabilidade de docente da UFBA</td>
-                            <td>30</td>
-                            <td>Cada hora de participação em em visitas técnicas corresponderá a 1 (uma) hora de atividade complementar.</td>
-                            <td style="text-align: justify;">Declarações ou certificados assinados pela instituição onde foi realizada a visita técnica, constando período e carga horária total. Apresentar também declaração do docente responsável pela visita técnica atestando a participação na data e horário da visita técnica.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div id="container-3">
-                <table>
-                    <caption>Quadro de atividades extensionistas</caption>
-
-                    <thead>
-                        <tr>
-                            <td>Modalidade de extensão</td>
-                            <td>Equivalência de carga horária</td>
-                            <td>Requisitos para aproveitamento</td>
-                        </tr>
-                    </thead>
-
-                    <tbody class="zebrado">
-                        <tr>
-                            <td>Projetos</td>
-                            <td>Cada hora de atuação em Projetos de extensão corresponderá a 1 (uma) hora de Atividade Extensionista.</td>
-                            <td style="text-align: justify;">Atuar em projetos de extensão vinculados à Faculdade de Ciências Contábeis ou a outras Unidades Universitárias que estejam registrados na Pró-Reitoria de Extensão Universitária (PROEXT) da UFBA. O projeto deverá ser complementar à formação do contador. Para comprovar a atuação no projeto, o estudante deverá apresentar certificado emitido pela PROEXT indicando a função exercida e a carga horária.</td>
-                        </tr>
-                        <tr>
-                            <td>Cursos</td>
-                            <td>Cada hora de atuação em Cursos de extensão corresponderá a 1 (uma) hora de Atividade Extensionista.</td>
-                            <td style="text-align: justify;">Atuar em cursos de extensão vinculados à Faculdade de Ciências Contábeis ou a outras Unidades Universitárias que estejam registrados na Pró-Reitoria de Extensão Universitária (PROEXT) da UFBA. O curso deverá ser complementar à formação do contador. Para comprovar a atuação no curso, o estudante deverá apresentar certificado emitido pela PROEXT indicando a função exercida e a carga horária. Cursos incluem designações como oficina, workshop, laboratório ou treinamento.</td>
-                        </tr>
-                        <tr>
-                            <td>Eventos</td>
-                            <td>Cada hora de atuação em Eventos extensionistas corresponderá a 1 (uma) hora de Atividade Extensionista.</td>
-                            <td style="text-align: justify;">Atuar em eventos extensionistas vinculados à Faculdade de Ciências Contábeis ou a outras Unidades Universitárias que estejam registrados na Pró-Reitoria de Extensão Universitária (PROEXT) da UFBA. O evento deverá ser complementar à formação do contador. Para comprovar a atuação no evento, o estudante deverá apresentar certificado emitido pela PROEXT indicando a função exercida e a carga horária. Eventos podem tomar as seguintes formas: processos ou produtos científicos e tecnológicos, ciclo de estudos, colóquio, conferência, congresso, conselho, debate, encontro, exposição, feira, fórum, jornada, lançamento de publicações e produtos, mesa redonda, mostra, olimpíada, palestra, semana de estudos, seminário, simpósio, entre outros.</td>
-                        </tr>
-                        <tr>
-                            <td>Trabalhos de campo</td>
-                            <td>Cada hora de atuação em Trabalhos de campo extensionistas corresponderá a 1 (uma) hora de Atividade Extensionista.</td>
-                            <td style="text-align: justify;">Atuar em trabalhos de campo extensionistas vinculados à Faculdade de Ciências Contábeis ou a outras Unidades Universitárias que estejam registrados na Pró-Reitoria de Extensão Universitária (PROEXT) da UFBA. O trabalho de campo deverá ser complementar à formação do contador. Para comprovar a atuação no trabalho de campo, o estudante deverá apresentar certificado emitido pela PROEXT indicando a função exercida e a carga horária.</td>
-                        </tr>
-                        <tr>
-                            <td>Prestação de serviços</td>
-                            <td>Cada hora de atuação em Prestação de serviços extensionista corresponderá a 1 (uma) hora de Atividade Extensionista.</td>
-                            <td style="text-align: justify;">Atuar em prestações de serviços extensionistas vinculados à Faculdade de Ciências Contábeis ou a outras Unidades Universitárias que estejam registrados na Pró-Reitoria de Extensão Universitária (PROEXT) da UFBA. A prestação de serviços deverá ser complementar à formação do contador. Para comprovar a atuação na prestação de serviços, o estudante deverá apresentar certificado emitido pela PROEXT indicando a função exercida e a carga horária. A prestação de serviços deverá ser vinculada à atividade acadêmica, de pesquisa ou ensino e inclui assessorias, consultorias e cooperação técnica e institucional, perícias, laudos técnicos, pesquisa encomendada através de contrato, criação e manutenção de sites, entre outros.</td>
-                        </tr>
-                        <tr>
-                            <td>Publicação e outros produtos acadêmicos resultantes de ações de extensão</td>
-                            <td>Cada hora de atuação em Publicação e outros produtos acadêmicos resultantes de ações de extensão corresponderá a 1 (uma) hora de Atividade Extensionista.</td>
-                            <td style="text-align: justify;">Atuar na elaboração de publicações e outros instrumentos oriundos das ações de extensão, para difusão e divulgação cientifica e tecnológica, incluindo livros, capítulos de livros, anais, manuais, cartilhas, cadernos, boletins, jornal, revista, artigos, comunicações, relatório técnico, filmes, vídeos, mídia eletrônica, programas de rádio e TV produzidos com caráter de difusão, dentre outros. As publicações oriundas das ações de extensão deverão ser complementares à formação do contador. Para comprovar a atuação nas publicações, o estudante deverá apresentar certificado emitido pela PROEXT indicando a função exercida e a carga horária.</td>
-                        </tr>
-                        <tr>
-                            <td>Ação curricular em comunidade e sociedade (ACCs)</td>
-                            <td>Cada hora da carga horária da ACCS corresponderá a 1 (uma) hora de Atividade Extensionista.</td>
-                            <td style="text-align: justify;">Cursar com aprovação disciplina no formato de ACCS. A ACCS deverá ser complementar à formação do contador. A aprovação deve constar em histórico escolar. Se a ACCS não for ofertada pela Faculdade de Ciências Contábeis, o programa oficial da ACCS deve ser apresentado para verificarse ela é complementar à formação do contador. A ACCS aproveitada como Atividade Extensionista não poderá ser aproveitada como disciplina optativa.</td>
-                        </tr>
-                        <tr>
-                            <td>Disciplinas com conteúdo extensionista</td>
-                            <td>Cada hora da carga horária da disciplina atribuída à extensão corresponderá a 1 (uma) hora de Atividade Extensionista.</td>
-                            <td style="text-align: justify;">Cursar com aprovação disciplina com conteúdo extensionista da Faculdade de Ciências Contábeis. A aprovação deve constar em histórico escolar. O programa oficial da disciplina deve ser apresentado para verificar a carga horária atribuída à extensão. A disciplina aproveitada como Atividade Extensionista não poderá ser aproveitada como disciplina optativa.</td>
-                        </tr>
-                        <tr>
-                            <td>Disciplinas extracurriculares</td>
-                            <td>Cada hora da carga horária da disciplina atribuída à extensão corresponderá a 1 (uma) hora de Atividade Extensionista.</td>
-                            <td style="text-align: justify;">Cursar com aprovação disciplina de outro curso de graduação da UFBA ou de outra Instituição de Ensino Superior reconhecida pelo MEC. A disciplina deverá ser complementar à formação do contador e não pode estar contemplada no currículo ao qual o estudante esteja vinculado. A aprovação deve constar em histórico escolar. O programa oficial da disciplina deve ser apresentado para verificar a carga horária atribuída à extensão e se ela é complementar à formação do contador. A disciplina extracurricular aproveitada como Atividade Extensionista não poderá ser aproveitada como disciplina optativa.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.624513312543!2d-38.52157232534472!3d-12.995851260296543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716053712c6acd5%3A0x444116e525821307!2sUniversidade%20Federal%20da%20Bahia%20-%20Faculdade%20de%20Ci%C3%AAncias%20Cont%C3%A1beis!5e0!3m2!1spt-BR!2sbr!4v1734798792148!5m2!1spt-BR!2sbr" width="fit" height="fit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Restam: <strong><span id="horas-restantes">240</span></strong> horas</p>
         </section>
     </main>
 <!--Rodapé-->
 <footer>
-<!--Redes sociais-->
-<div class="redessociais">
     <ul>
-        <li>
-            <a href="https://www.youtube.com/@reisleonardo" target="_blank">
-                <img src="images/youtube-icon-white.png" alt="Canal do YouTube">
-            </a>
-        </li>
         <li>
             <a href="https://github.com/ReisLeonardo" target="_blank">
                 <img src="images/github-icon-white.png" alt="Perfil Github">
             </a>
         </li>
+        <p>Site criado por Leonardo Reis<br>&copy; Todos os direitos reservados</p>
         <li>
             <a href="https://www.linkedin.com/in/reis-leonardo/" target="_blank">
                 <img src="images/linkedin-icon-white.png" alt="Perfil LinkedIn">
             </a>
         </li>
     </ul>
-</div>
-<!--Créditos-->
-<p>&copy; Leonardo Reis | Todos os direitos reservados</p>
 </footer>
 </body>
 </html>

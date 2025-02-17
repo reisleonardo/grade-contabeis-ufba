@@ -13,19 +13,23 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-nav li {
+ul {
+    display: flex;
+    justify-content: space-evenly;
     list-style-type: none;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
-nav li a {
+header li > a {
     text-decoration: none;
-    color: black;
     background-color: white;
     padding: 8px;
-    border-radius: 20px;
+    color: black;
+    border-radius: 10px;
 }
 
 /* Corpo */
@@ -33,15 +37,43 @@ body {
     background-color: whitesmoke;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+#natureza {
+    font-size: 0.5em;
+    border-style: solid;
+}
+
+#container-1, #container-2 {
+    margin: 15px auto 10px auto;
+    font-size: 0.3em;
+    max-width: fit-content;
+    border: 1px solid black;
+}
+
 caption {
-    padding: 10px;
+    background-color: rgb(51, 51, 51);   
+    color: white;
 }
 
-#container-3 > table > tbody > :nth-child(even) {
-    background-color: gray;
+thead {
+    background-color: gainsboro;
+    text-align: center;
 }
 
-/* Telas smartphone (pequeno) */
+tbody {
+    text-align: center;
+}
+
+body p {
+    text-align: center;
+}
+
+/* APAGUE Telas smartphone (pequeno) 
 @media (max-width: 768px) {
     header {
         font-size: 0.7em;
@@ -71,10 +103,10 @@ caption {
         padding: 10px;
         margin: auto;
         max-width: fit-content;
-    }
+    }APAGUE*/ 
 
     /* TODO: O problema de responsividade provavelmente esteja aqui */
-    #container-1 > table, #container-2 > table, #container-3 > table {
+    /* APAGUE #container-1 > table, #container-2 > table, #container-3 > table {
         border: 1px solid black;
         max-width: fit-content;
         font-size: 0.1em;
@@ -97,9 +129,9 @@ caption {
         text-align: center;
     }
 }
-
+* Apague/
 /* Tablets */
-@media (min-width: 768px) {
+/* APAGUE @media (min-width: 768px) {
     section {
         padding: 30px;
         text-align: center;
@@ -142,10 +174,10 @@ caption {
         margin-bottom: 30px;
         text-align: center;
     }
-}
+} * APAGUE/
 
 /* Outras telas (desktop) */
-@media (min-width: 1200px){
+/* APAGUE @media (min-width: 1200px){
     section {
         display: flex;
         flex-direction: column;
@@ -196,7 +228,7 @@ thead tr td{
     background-color: black;
     color: white;
     padding: 10px;
-}
+} * APAGUE/ */
 
 
 #liberado {
@@ -209,35 +241,42 @@ thead tr td{
 
 /* Rodapé */
 footer {
+    margin-top: 10px;
     background-color: black;
-    padding: 12px;
+    padding: 5px;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 footer ul {
+    padding-bottom: 5px;
     display: flex;
-    padding: 0;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 footer li {
     align-content: center;
     list-style-type: none;
-    margin: 0 10px;
 }
 
 footer a img {
-    width: 30px;
+    width: 15px;
 }
 
 footer p {
-    font-size: 0.8em;
-    margin: 10px auto;
+    align-content: center;
+    margin: auto 10px auto 10px;
+    font-size: 0.5em;
 }
 
 /* Específica */
-#roxo {
+#amarelo {
     background-color: yellow;
     color: black;
+}
+
+#cinza {
+    background-color: gainsboro;
 }

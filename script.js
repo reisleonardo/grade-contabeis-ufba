@@ -90,14 +90,12 @@ document.addEventListener("DOMContentLoaded", function() {
         'FCC049': 60,
         'FCC053': 60,
         'FCC047': 60,
-        'FCCF02': 240,
-        'FCCF70': 150,
-        'FCCF71': 150
+        'FCCF02': 240
     };
 
     // Atualiza o total de matérias restantes e a creditação obrigatória
     function updateTotal() {
-        let total = 39; // Número total de disciplinas obrigatórias
+        let total = 37; // Número total de disciplinas obrigatórias
         let creditacaoObrigatoria = 0; // Total de créditos nas disciplinas obrigatórias
 
         checkboxes.forEach(checkbox => {
@@ -165,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const checkboxes = document.querySelectorAll('.discipline-checkbox');
 
     function updateTotal() {
-        let total = 39; // Valor inicial
+        let total = 37; // Valor inicial
 
         checkboxes.forEach(checkbox => {
             if (checkbox.checked) {

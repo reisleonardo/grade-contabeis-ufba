@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+header li > a {
+    text-decoration: none;
+    background-color: white;
+    padding: 8px;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Corpo */
+body {
+    background-color: whitesmoke;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+#container {
+    margin: 15px auto 20px auto;
+    max-width: fit-content;
+    border: solid;
+    border-color: black;
+}
+
+caption {
+    background-color: rgb(51, 51, 51);   
+    color: white;
+}
+
+thead {
+    background-color: gainsboro;
+    text-align: center;
+}
+
+tbody {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: black;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer li {
+    align-content: center;
+    list-style-type: none;
+}
+
+footer a img {
+    width: 15px;
+}
+
+footer p {
+    align-content: center;
+    margin: auto 10px auto 10px;
+    font-size: 0.5em;
+}
